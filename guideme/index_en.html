@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideMe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <nav class="menu" id="menu">
+        <div class="container">
+            
+            <div class="menu__wrapper">
+                <div class="logo"><img src="img/Logo.png" alt="logo"></div>
+                <ul class="menu__links">
+                    <li class="menu_item"><a class="menu_link" href="#afisha">Events</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#map">City map</a></li> 
+                    <li class="menu_item"><a class="menu_link" href="#catalog">List of Places</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#home">Accommodation</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#feed">Feedback</a></li>
+                
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu__search">
+                    <form>
+                        <input type="text" name="text" class="search"placeholder="Search string">
+                        <input type="submit" name="submit" class="menu__search-btn" value="Search">
+                    </form>
+                </div>
+                <div class="language">
+                    <a href="index.html">РУС</a>
+                |
+                    <a href="index_en.html">ENG</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="afisha" id="afisha">
+        <div class="container">
+            <div class="wrapper">
+                <div class="carousel-container">
+                    <div class="carousel" >
+                      <div class="carousel-item"> <img src="img/2/slide1eng.jpg" alt="slide1"> </div>
+                      <div class="carousel-item"> <img src="img/2/slide2eng.jpg" alt="slide2"> </div>
+                      <div class="carousel-item"> <img src="img/2/slide3eng.jpg" alt="slide3"> </div>
+
+                     <!--  <div class="carousel-item"> <img src="img/2/lyubov-po-italyanski-v-almaty slaider (1).jpg" alt="slide3"> </div> -->
+                    </div>
+                    <div class="carousel-dots"></div>
+                    <button class="carousel-prev">&lt;</button>
+                    <button class="carousel-next">&gt;</button>
+                </div>
+
+                <div class="exchange">
+                    <fxwidget-cc amount="1" decimals="2" large="false" shadow="true" symbol="true" grouping="true" border="true" from="KZT" to="USD" background-color="#344c11" border-radius="0.4" lang="en"></fxwidget-cc><script async src="https://s.fx-w.io/widgets/currency-converter/latest.js?en"></script>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="map" id="map">
+        <div class="container">
+            <div class="wrapper_box">
+                <button class="box" id="blue">Active recreation</button>
+                <button class="box" id="red">Food</button>
+                <button class="box" id="purple">Theaters</button>
+                <button class="box" id="yellow">Attractions</button>
+                <button class="box" id="green">Parks</button>
+            </div>
+
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa9dab906b5e15fb05d99dc45fb6738e045a2378f87291857c81e7249c560aed5&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <ul class="catalog__tabs">
+                <li class="catalog__tab"><div>Food</div></li>
+                <li class="catalog__tab"><div>Attractions</div></li>
+                <li class="catalog__tab"><div>Shopping</div></li>
+                <li class="catalog__tab"><div>Places for families</div></li>
+                <li class="catalog__tab"><div>Night bars</div></li>
+                <li class="catalog__tab"><div>Museums & galleries</div></li>
+                <li class="catalog__tab"><div>Theaters & cinemas</div></li>
+                <li class="catalog__tab catalog__tab_active"><div>Active recreation</div></li>
+            </ul>
+
+            <div class="catalog__content">
+                <div class="catalog-item eng">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">MAMMA MIA</div>
+                            <img src="img/4/mammamia.jpg" alt="mammamia" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Work schedule:</span> <br> daily, check the opening hours with the branch
+                            
+                            <span>Travel time from the international airport:</span> <br> depends on the location of the branch
+                            </div>
+                            <a href="#" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>MAMMA MIA is a chain of establishments that, for many years, has been welcoming guests with a cozy interior, delicious cuisine and high service
+                                <br>
+                                More than 10 establishments in Kazakhstan and thousands of grateful guests who have become the hallmark of MAMMA MIA.
+                                <br>
+                                Quality, reliability and love for our work are the guidelines that we adhere to and that unite the entire network under one roof.</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Dadiani</div>
+                            <img src="img/4/dadiani.jpg" alt="dadiani" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Work schedule:</span> Daily from 12:00 to 00:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 30 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Gourmet dishes, insanely delicious meat sets, wines from Georgian cellars, laid–back live music and, of course, delicious kebabs - all this is the Georgian cuisine cafe "Dadiani"..</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Georgian Courtyard</div>
+                            <img src="img/4/gruziya.webp" alt="gruzinskiydvor" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Work schedule:</span> Daily from 11:00-01:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 40 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>One of the most famous restaurants of traditional Georgian cuisine in the city. In addition to Georgian cuisine, the restaurant also offers a choice of European, Italian and Caucasian cuisine. An ideal place for banquets, family celebrations, as well as delicious evenings. <br> 
+                                Address: 27B Zhandosova Street, 1st floor</li>
+                            <a href="#" class="catalog-item__back">Back</a>    
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Монумент Независимости Казахстана</div>
+                            <img src="img/4/minument.jpg" alt="momument" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> around the clock
+                            <br> 
+                            <span>Travel time from the international airport:</span> 25 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Monument of Independence of Kazakhstan is a monument on the central square (Republic Square) of Almaty, the main motive of which is the image of the Golden Man.
+                                Established in 1996 <br>
+                                Address: Almaty, Republic Square
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Koktobe Tower</div>
+                            <img src="img/4/telebashnya.jpg" alt="koktobe" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> around the clock
+                            <br> 
+                            <span>Travel time from the international airport:</span> 30 <br> minutes
+                            </div>
+                        </div>
+                        <a href="" class="catalog-item__link">More detailed</a>
+                        <ul class="catalog-item__list">
+                            <li>The tower is one of the most earthquake-resistant and tallest structures in the world. The 2nd tallest building in Kazakhstan and the 32nd in the world (at the time of commissioning - the 4th in the world). The tower is located below the top of the Kok-Tobe Mountain, southeast of the city center <br>
+                            Адрес: Алматы, Кок-Тобе</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Central Mosque</div>
+                            <img src="img/4/mechet.jpg" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 9:00 to 18:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 25 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The largest mosque in the city and one of the largest mosques in Kazakhstan.</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Ascension Cathedral</div>
+                            <img src="img/4/Sobor.jpg" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 7:00 to 18:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 23 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">Learn more</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Ascension Cathedral is an Orthodox church in Alma—Ata, on the territory of the park named after 28 Panfilov Guards, one of the two cathedrals of the Astana and Almaty dioceses of the Russian Orthodox Church. <br> <br> It was built in the Pushkin Park of the city of Verniy, Semirechensk region in 1904-1907 as the cathedral of the Turkestan diocese. <br>  <br> With a height of 41.4 (up to the bell tower's cross ball) or 54 m in general, it is one of the tallest wooden churches in the world; an example of earthquake-resistant structures. It is included in the list of historical and cultural monuments of Kazakhstan of republican significance.</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Mega Center Alma-Ata</div>
+                            <img src="img/4/mega.jpg" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> Daily from 10:00 to 22:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 45 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>This is a territory of comfortable shopping and leisure for the whole family. The mall has become a launching pad in the Kazakhstan market for brands such as ZARA, H&M, New Yorker, Armani Exchange, Marc O'Polo, Starbucks, Burger King, KFC, Hardee's and others.
+                            <br><br>
+                            <span>Address:</span> Almaty, Rozybakieva str., 247a
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">FORUM</div>
+                            <img src="img/4/forum.webp" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 10:00 to 22:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 35 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>This is the embodiment of the unique concept of a "City within a City", located in the very center of the Southern capital. On an area of 168,000 sq.m. there are shops, restaurants, entertainment and sports grounds, a supermarket and a wide range of services for visitors. <br><br>
+                                Address: Seifullin Avenue, 617</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Dostyk-Plaza</div>
+                            <img src="img/4/dostyk.jpg" alt="dostyk" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 10:00 to 22:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 25 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>This is the embodiment of the unique concept of a "City within a City", located in the very center of the Southern capital. On an area of 168,000 sq.m. there are shops, restaurants, entertainment and sports grounds, a supermarket and a wide range of services for visitors.<br><br>
+                                Address: Samal-2 microdistrict, 111</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Fantasy World Almaty</div>
+                            <img src="img/4/fantasy.jpg" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 10:00 to 21:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 30 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The modern amusement park is very conveniently located in the city center, near the circus and metro station. It is open in the warm season and offers many fascinating attractions for children and adults.On the territory of the park there are more than 50 types of various attractions that will not leave you without emotions. <br><br>
+                                Address: Abai Avenue, 50a/1</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Family Park</div>
+                            <img src="img/4/family.webp" alt="park" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                                <span>Working hours:</span> daily from 11:00 to 23:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 50 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>On the territory of the park there are 32 attractions, five cafes, and there is also a water park with three pools and four slides. In addition, there is karting – children's, adult, family, and from the side of Ulugbek Street there is a bowling alley with 8 AFM tracks, children's and adult vending machines with virtual games. There are two stages in the park, a mini-zoo, and several samples of decommissioned military equipment are on display. Family Park traditionally hosts festive cultural and sports events, charity events for orphans, children from orphanages, boarding schools, large and low-income families.
+                                <br><br>
+                                Address: 57a Ulugbek Avenue
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Central Park <br> culture and recreation</div>
+                            <img src="img/4/centralpark.jpg" alt="Park" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> all year round
+                            <br> 
+                            <span>Travel time from the international airport:</span> no data available
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Central Park of Culture and Recreation is located in the Medeu district of Almaty. The park was founded in 1856 by the horticulturist G.Krishtopenko and was called the "State Garden". The park was a place for walks and officers of the Vernensky garrison.
+                                <br> <br>
+                                In 1934, the park was reconstructed, recreation centers for workers of Alma-Ata were placed on the banks of the deepened reservoir, and attractions were equipped.
+                                <br> <br>
+                                On the territory of the park there are children's attractions, a children's railway, winter and summer water parks, sports grounds, boat and catamaran rental stations, various cafes, a dinopark.</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Park of the First President of the Republic of Kazakhstan</div>
+                            <img src="img/4/president.jpg" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 07:00 to 23:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 40 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Park named after the First President of the Republic of Kazakhstan is the largest arboretum in the city of Almaty, located in the Bostandyk district, in the southwestern part of the city. Its area is 53 hectares. The park is great for jogging, photo shoots and evening walks.
+                                <br><br>
+                                Address: Al-Farabi Avenue - Navoi Street
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Late night show</div>
+                            <img src="img/4/late.jpg" alt="late" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 18:00 to 06:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 30 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>A bar, ideal for having fun in the evening and at night.It is located in one place with many other famous bars of the city for young people. <br><br>
+                                Address: 124.32 Nazarbayev Avenue room; 1st floor</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Olovo cocktail bar</div>
+                            <img src="img/4/olovo.jpg" alt="olovo" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 12:00 to 02:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 45 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>A restaurant with interesting and delicious cuisine, a fun show program. One of the most popular establishments in Almaty, where you can spend time with friends and relax.
+                                <br><br>
+                                Address: Grand AiSer Hotel,Pozharsky Street, 1.1 floor
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Mongol Bar</div>
+                            <img src="img/4/mongol.jpg" alt="mongol" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 00:00 to 24:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 35 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>A restaurant of European cuisine, designed for 150 people, located in the city center. It is famous for its reputation as a sincere and cheerful institution.
+                                <br><br>
+                                Address: Kurmangazy street, 43.1 floor
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Central State Museum of Kazakhstan</div>
+                            <img src="img/4/muzey1.jpg" alt="museum" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> daily from 09:00 to 18:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 30 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Central State Museum of the Republic of Kazakhstan is one of the oldest and largest museums not only in Kazakhstan, but also in the entire Central Asian region. The museum's stock collections number about 300 thousand items. Currently, the museum has seven main exhibition halls.
+                                <br><br>
+                                Address: Samal-1 microdistrict, 44
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">A. Kasteev State Museum of Art</div>
+                            <img src="img/4/kasteeva.jpg" alt="museum" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> Tue-Sun, 10:00-18:00 
+                            <br> 
+                            <span>Travel time from the international airport:</span> 40 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Kasteev Art Museum is the largest art museum in Kazakhstan. The institution conducts research and educational activities in the field of fine arts. Exhibitions of contemporary art are held at the museum sites, special attention is paid to the Kazakh artist.<br><br>
+                                Address: Koktem-3 microdistrict, 22/1</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Museum of Archaeology</div>
+                            <img src="img/4/museum2.jpg" alt="museum" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> Mon-Sat from 09:00 to 18:30, lunch from 13:00 to 14:30
+                            <br> 
+                            <span>Travel time from the international airport:</span> 35 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Museum of Archeology is a cultural division of the Academy of Sciences of Kazakhstan. The museum is located in the scientific museum complex "Gylym Ordasy". It is the only one of its kind in the territory of the Republic of Kazakhstan. <br><br>
+                                Address: Shevchenko Street, 28, 201, 204 office; 2nd floor</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Mukhtar Auezov Drama Theater</div>
+                            <img src="img/4/teatr.jpg" alt="theatre" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> Daily from 09:00 to 18:00, lunch from 14:00 to 15:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 45 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>In 1981, a new building was built for the M. Auezov Drama Theater, the authors of which were architects O. Baymurzaev, A. Kaynarbayev, M. Zhaksylykov. The building has two halls with a capacity of more than 1,000 spectators, about 200 performances take place per year, the current repertoire includes 50 plays. The theater has repeatedly won prizes at various festivals and competitions.
+                                <br><br>
+                                Address: 103 Abay Avenue
+                            </li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Lumiera Cinema</div>
+                            <img src="img/4/lumiera.jpg" alt="lumiera" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> Daily from 10:00 to 24:00
+                            <br> 
+                            <span>Travel time from the international airport:</span> 35 <br> minutes
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The Lumiere Cinema (TSUM) opened in 2016. There are six cozy cinema halls, accommodating a total of 916 spectators. The area of the cinema is 6 thousand square meters. The cinema was built according to the project of the German architectural bureau Atelier ACHATZ Architekten.<br><br>
+                                Address: ​TD TSUM,Abylai Khan Avenue, 621 floor</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <div class="catalog__content catalog__content_active">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Kok-Tobe</div>
+                            <img src="img/4/Koktobe.jpg" alt="koktobe" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> all year round
+                            <br> 
+                            <span>Travel time from the international airport:</span> 30 <br> minutes
+                            </div>
+                            <a href="#" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Kok Tobe Amusement Park is one of the symbols of the city of Almaty and the whole of Kazakhstan, located on the peak of Kok Tobe Mountain at an altitude of 1,100 meters above sea level, a 5—minute drive from the city center. <br>  <br>
+                                On the territory of the park there are many places of entertainment, some of the best restaurants in the city, as well as a live park with exotic representatives of the animal world.</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Medeu</div>
+                            <img src="img/4/Medeu.jpg" alt="Medeu" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> all year round
+                            <br> 
+                            <span>Travel time from the international airport:</span> no data available
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Medeu Ice rink, located at an altitude of 1691.2 meters above sea level. It was erected in 1972. The ice surface occupies 10.5 thousand sq.m., which makes it possible to hold competitions in speed skating, hockey and figure skating. <br>  <br> The mild climate in the gorge, the optimal level of solar radiation, low atmospheric pressure, weak wind and clear glacial water – all this provided the alpine skating rink with wide popularity. More than 120 world records have been set here by famous athletes.</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Shymkent</div>
+                            <img src="img/4/SHymbulak-1.jpg" alt="Medeu" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Working hours:</span> all year round
+                            <br> 
+                            <span>Travel time from the international airport:</span> no data available
+                            </div>
+                            <a href="" class="catalog-item__link">More detailed</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>The mountain resort "Shymkent" is located in the picturesque gorge of the Trans–Ili Alatau at an altitude of 2260 meters above sea level, a 15-minute drive from the center of Almaty. <br> <br> You can get to the resort by cable car, which runs 10 lifts, as well as by public transport or car. The resort's working hours are all year round. On the territory of the resort there are many places for a real holiday. The beauty of the Trans-Ili Alatau will not leave anyone indifferent.</li>
+                            <a href="#" class="catalog-item__back">Back</a>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="home">
+        <div class="container">
+            <div class="backgroundcolor"></div>
+            <div class="backgroundphoto"></div>
+            <div class="info">
+                <h2>Find your home in Almaty</h2>
+<div class="dividder"></div>
+                <div class="content">
+Almaty is an amazing city that offers tourists various housing options for their comfort. You can book a hotel in advance to be sure that a comfortable stay awaits you. You can also choose to rent an apartment yourself and enjoy the city as a local resident.
+                    <br> If you want to rent an apartment, it is recommended to start the search in advance in order to have more time to choose and not rush to a decision.
+                    <br> <h3>Rental housing</h3>
+<div class="apartments">
+                        <a href="https://www.airbnb.ru /">AirBnB</a> is an online platform for short-term rental of private housing. <br>
+                        <a href="https://krisha.kz/">Roof</a> is an online platform for short- and long-term rental and purchase of private housing.
+                    </div>
+                    <div class="divider"><hr></div>
+                    <div class="hostel">
+                        <h3>Hotels and inns</h3>
+                        
+                        <a href="https://www.instagram.com/qazaqauyl/">Qazaq Auyl Eco Hotel</a> is located in Almaty, 7.6 km from Shymkent. It offers a garden, free private parking and a restaurant. The hotel is 14 km from Kok-Tobe and 15 km from the Central State Museum of the Republic of Kazakhstan and the Palace of the Republic. The reception is open 24 hours a day. Free Wi-Fi is available throughout the property. It offers a sauna. <br>
+                        <span class="span">Address:</span> Kerey-Zhanibek khandar Street, 586 <br>
+                        <span class="span">Working hours:</span> Around the clock<br>
+                        <span class="span">Room rates (per day):</span> from 144 000 tenge
+                        <br>
+                        <a href="https://renion-park.almaty-hotel.com/ru/">Renion Park Hotel</a> is located in Almaty, 500 meters from the Ascension Cathedral. It offers a restaurant, a fitness center, a bar and free private parking. All rooms at the 4-star hotel offer views of the city. The hotel also has an indoor swimming pool and sauna. There is also a 24-hour front desk and free Wi-Fi throughout. Guests can order room service. An airport shuttle service is available. <br>
+                        <span class="span">Address:</span> 66 Kunaev Street <br>
+                        <span class="span">Working hours:</span> Around the clock <br>
+                        <span class="span">Room rates (per day):</span> from 60,000 tenge
+                        <br>
+                        <a href="http://kazakhstanhotel.kz/">The hotel "Kazakhstan"</a> is a historical symbol of Almaty, which combines elegant design, high level of service and modern amenities. It was built in 1978 and since then has served as one of the best places to stay in the city. Located in the city center, the hotel offers excellent views of the city and mountain peaks, as well as easy access to the main attractions of the city. The hotel offers its guests a wide range of services, including high-level restaurants, conference rooms, a 24-hour business center, a gym and a spa. The Kazakhstan Hotel is an ideal place for those who are looking for a historical and elegant atmosphere combined with modern comfort. <br>
+                        <span class="span">Address:</span> Dostyk Avenue, 52/2 <br>
+                        <span class="span">Working hours:</span> Around the clock <br>
+                        <span class="span">Room rates (per day):</span> from 35,000 tenge
+
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="feedback">
+        <div class="container">
+            <h2 class="feedback-title">
+                Contact us
+            </h2>
+            <div class="feedback-descr">
+                If you have any complaints or suggestions, please, contact us
+            </div>
+            <form id="consultation-form" class="feed-form" action="#">
+                <div class="input-title">
+                    Your name
+                </div>
+                <input name="name" ="Your name" type="text" value="Ivan Ivanov">
+                <div class="input-title">
+                    Your phone number
+                </div>
+                <input name="phone" ="Your phone number" type="phone" value="+7(777)-777-77-77">
+                <div class="input-title">
+                    Your E-mail
+                </div>
+                <input name="email" ="Your E-mail" type="email" value="example@gmail.com">
+                <div class="input-title">
+                    Your Feedback
+                </div>
+                <input id="feedback" name="feedback" ="Write your message here" type="text" value="Field for feedback">
+                <div class="policy">
+                    <input class="checkbox" type="checkbox">
+                    <div class="policy-text">I agree with <a href="https://adilet.zan.kz/rus/docs/V2000021498">the privacy policy</a> </div>
+                    
+                </div>
+                <button class="button_submit">SUBMIT</button>
+                <!-- <input type="submit" value="заказать консультацию"> -->
+                <!-- <textarea name="" id="" cols="30" rows="15  "></textarea> -->
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <div class="transport">
+Transport:
+<a href="http://taxi .yandex.kz/">Taxi Yandex.Taxi</a>
+                    <a href="https://anytime.kz/">Carsharing Anytime</a>
+                    <a href="https://onay.kz/#/">Onai Bus Card</a> 
+                </div>
+                <div class="food">
+                    Food delivery:
+                    <a href="https://wolt.com/ru/kaz">Wolt</a>
+                    <a href="https://glovoapp.com/kz/ru/almaty/">Glovo</a>
+                    <a href="https://eda.yandex.kz/ru-kz/almaty?shippingType=delivery">Yandex Food</a>
+                </div>
+                <div class="emergency">
+                    112 — A single emergency call number <br>
+                    102 — Police <br>
+                    103 — Emergency medical care<br>
+                    110 — Anti-Terrorist Service<br>
+                    2288 — Consulting on all matters related to the religious sphere.
+                </div>
+                <div class="egov"> 
+                    <a href="https://egov.kz/cms/ru/articles/foreign_dip_missions_rk">Contacts of foreign consular offices in Kazakhstan</a>
+                </div>
+
+                <div class="links__wrapper">
+                    <a href="#menu">to the main</a>
+                    <a href="#catalog">list of places</a>
+                    <a href="#afisha">billboard</a>
+                </div>
+                
+            </div>
+            <div class="divider">
+                <hr>
+            </div>
+            <div class="links__contacts">
+                Contact us:<a href="tel:+77773222222" class="contacts__tel"> +7(777)322-22-22</a>
+            </div>
+        </div>
+    </footer>
+    <a id="back2Top" title="Наверх" href="#"> <img src="icons/free-icon-up-arrow-25223.png" alt="up"> </a>
+
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body> 
+</html>
